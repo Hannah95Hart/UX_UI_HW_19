@@ -1,126 +1,119 @@
-.inline-block{
-    display:inline-block;
-    vertical-align:text-top;
-  }
-  h1 {
-    display:inline-block;
-    vertical-align: top;
-  }
-  
-  .logo{
-    width:23%;
-    padding:1%;
-    border: 5px solid #8c6658;
-  }
-  nav .inline-block{
-    width:800%;
-    padding:100%;
-  }
-  ul{
-    list-style-type: none;
-    width:200%;
-    margin:20px;
-  }
-  li{
-    float:right;
-  }
-  li {
-    border-left: 2px solid #8c6658;
-    border-right: 2px solid #8c6658;
-  }
-  li:last-child {
-    border-right:none;
-  }
-  a{
-    display:block;
-    padding:8px;
-  }
-
-
-.About img{
-    height:500px;
-    width:400px;
-    float:left;
-  }
-
-.About p{
-  padding:120px;
+body {
+  margin: 0;
+}
+header {
+  background-color: #38453E;
+  padding: 15px;
+}
+.aboutOne{
+  height:400px;
+  width:auto;
+}
+.logo{
+  height:100px;
+  width:auto;
+  align: center
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
   text-align: center;
-  font-size: 20px;
 }
-p{
-    max-width: 1000px;
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
 }
-h2{
-  text-align:center;
-  font-size:30px;
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+}
+.flexContainer div {
+  width: 33%;
+  padding: 25px;
 }
 
-.mySkills{
-    display:flex;
-    flex-direction:column;
-    background-color: #BFBFBF;
-    padding:50px;
-    
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  background-color: #EBEBEB;
 }
-
-.flexChild{
-    padding:10px;
-    margin:10px;
-    height:50px;
-    background-color:#7D8C82;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:bolder;
-}
-.context{
-  text-align:center;
-}
-.workGrid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1 fr;
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
   grid-template-areas:
-  "firstWork imageOne"
-  "imageTwo secondWork";
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
 }
-.imageOne{
-  height:400px;
-  width:400px;
-  padding:5%;
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
 }
-.imageTwo{
-  height:400px;
-  width:400px;
-  padding:5%;
+.img1 {
+  grid-area: img1;
 }
-button{
-  padding: 15px 32px;
-  text-align: center;
-  background-color:#7D8C82;
-  color:white;
-  margin:10px;
+.img2 {
+  grid-area: img2;
 }
-.firstWork h5{
-font-weight:bolder;
-font-size:25px;
+.img3 {
+  grid-area: img3;
 }
-.secondWork h5{
-  font-weight:bolder;
-  font-size: 25px;
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 80px;
 }
-.firstWork p{
-  padding-right: 5%;
+.content1 {
+  grid-area: content1;
 }
-.secondWork p{
-  padding-right: 5%;
+.content2 {
+  grid-area: content2;
 }
-.buttonTwo{
-  align:center;
-  text-align:center;
-  color: black;
-  background-color:#8c6658;
+.content3 {
+  grid-area: content3;
+}
 }
 @media only screen and (max-width:600){
   flex-direction:columns;   
