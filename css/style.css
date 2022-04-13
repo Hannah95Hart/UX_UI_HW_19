@@ -8,11 +8,11 @@ header {
 .aboutOne{
   height:400px;
   width:auto;
+  align-items:center;
 }
 .logo{
-  height:100px;
+  height:80px;
   width:auto;
-  align: center
 }
 header ul {
   float: right;
@@ -62,6 +62,18 @@ footer li {
   font-size: 30px;
 }
 /* My UX Skills Section */
+.uxSkills{
+  width:200px;
+  height:auto;
+}
+.uiSkills{
+  width:200px;
+  height:auto;
+}
+.webDes{
+  width:200px;
+  height: auto;
+}
 .flexContainer {
   display: flex;
   padding: 60px 30px;
